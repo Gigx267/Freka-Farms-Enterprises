@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Our Products | Freka Farms Enterprises - Pure Honey & Arabian Tea</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="description" content="Shop Freka Farms premium products: NAFDAC approved natural honey, Arabian tea, honey comb, gift packs. Pure, raw, and bioactive for your wellness journey.">
+    <meta name="keywords" content="buy natural honey Lagos, Arabian tea Nigeria, NAFDAC honey, raw honey for sale, Freka honey price, organic honey, honey for diabetes, wellness tea">
+    
+    <!-- Favicon -->
+    <link href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23f5b042'/%3E%3Cpath fill='%23fff' d='M30 40 L70 40 L75 50 L70 60 L30 60 L25 50 Z'/%3E%3C/svg%3E" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">   
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    
+    <style>
+        .btn-primary, .bg-primary {
+            background-color: #f5a623 !important;
+            border-color: #e69500 !important;
+        }
+        .btn-secondary, .bg-secondary {
+            background-color: #c47a2e !important;
+            border-color: #b06b20 !important;
+        }
+        .text-primary {
+            color: #f5a623 !important;
+        }
+        .product-card {
+            transition: all 0.3s ease;
+            border: none;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+        .product-img {
+            height: 280px;
+            object-fit: cover;
+            width: 100%;
+            transition: transform 0.5s;
+        }
+        .product-card:hover .product-img {
+            transform: scale(1.05);
+        }
+        .badge-nfdac {
+            background: #228B22;
+            color: white;
+            font-size: 0.7rem;
+            padding: 5px 10px;
+            border-radius: 30px;
+        }
+        .price-tag {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #f5a623;
+        }
+        .section-title.bg-white.text-center.text-primary.px-3 {
+            display: inline-block;
+            background: white;
+        }
+        .category-filter {
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .category-filter.active, .category-filter:hover {
+            background-color: #f5a623;
+            color: white !important;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #f5a623 !important;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top px-4 px-lg-5" style="background: linear-gradient(to bottom, rgba(255, 140, 0, 0.9), rgba(34, 139, 34, 0.7)); backdrop-filter: blur(5px);">
+        <a href="index.html" class="navbar-brand d-flex align-items-center">
+            <img src="p (12).jpeg" alt="Freka Farms Logo" style="height: 50px; margin-right: 10px; border-radius: 50%; box-shadow: 0 2px 8px rgba(255, 140, 0, 0.5);">
+            <h1 class="m-0 text-white">Freka Farms</h1>
+        </a>
+        <button type="button" class="navbar-toggler me-0 border-light" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link text-white-50">Home</a>
+                <a href="about.html" class="nav-item nav-link text-white-50">About</a>
+                <a href="products.html" class="nav-item nav-link active text-white">Products</a>
+                <a href="benefits.html" class="nav-item nav-link text-white-50">Wellness</a>
+                <a href="contact.html" class="nav-item nav-link text-white-50">Contact</a>
+            </div>
+            <div class="border-start border-light ps-4 d-none d-lg-block">
+                <a href="contact.html" class="btn rounded-pill py-2 px-4" style="background-color: #228B22; color: white; border: none;">Order Now</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header mb-5 wow fadeIn" data-wow-delay="0.1s" style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('b4.jpg'); background-size: cover; background-position: center; padding: 100px 0;">
+        <div class="container text-center py-5">
+            <h1 class="display-2 text-white mb-4 animated slideInDown">Our Products</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a href="index.html" class="text-white">Home</a></li>
+                    <li class="breadcrumb-item text-white active" aria-current="page">Products</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+    <!-- Products Filter Section -->
+    <div class="container-xxl py-3">
+        <div class="container text-center">
+            <div class="btn-group flex-wrap justify-content-center gap-2 mb-5" id="productFilters">
+                <button class="btn btn-outline-primary rounded-pill px-4 category-filter active" data-filter="all">All Products</button>
+                <button class="btn btn-outline-primary rounded-pill px-4 category-filter" data-filter="honey">Natural Honey</button>
+                <button class="btn btn-outline-primary rounded-pill px-4 category-filter" data-filter="tea">Arabian Tea</button>
+                <button class="btn btn-outline-primary rounded-pill px-4 category-filter" data-filter="combo">Combo Packs</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Products Grid -->
+    <div class="container-xxl py-4">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 700px;">
+                <p class="section-title bg-white text-center text-primary px-3">Premium Quality</p>
+                <h1 class="mb-5">NAFDAC Approved • 100% Pure • Raw & Unprocessed</h1>
+                <p class="mb-5">Every product is bottled exactly as nature intended — no additives, no heat processing. Just pure wellness from Freka Farms.</p>
+            </div>
+            
+            <div class="row g-4 product-container">
+                <!-- Product 1 - Freka Natural Honey (250ml) -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp product-item" data-category="honey" data-wow-delay="0.1s">
+                    <div class="product-card bg-white rounded-4 shadow-sm h-100">
+                        <div class="position-relative overflow-hidden rounded-top-4">
+                            <img class="product-img" src="p (19).jpeg" alt="Freka Natural Honey 250ml">
+                            <div class="position-absolute top-0 start-0 m-3">
+                                <span class="badge-nfdac"><i class="fas fa-check-circle me-1"></i>NAFDAC Approved</span>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h4 class="mb-0">Freka Natural Honey</h4>
+                                <i class="fas fa-leaf text-primary"></i>
+                            </div>
+                            <p class="text-muted small">250ml Glass Jar • Raw & Bioactive</p>
+                            <p class="mb-3">100% pure, unprocessed honey with natural enzymes. Helps boost immunity, soothe sore throat, radiant skin, and manage ulcers.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="price-tag">₦4,500</span>
+                                <a href="https://wa.me/2348069011339?text=Hello%20Freka%20Farms,%20I%20want%20to%20order%20the%20250ml%20Natural%20Honey" class="btn btn-primary rounded-pill px-4" target="_blank">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 - Freka Natural Honey (500ml) -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp product-item" data-category="honey" data-wow-delay="0.2s">
+                    <div class="product-card bg-white rounded-4 shadow-sm h-100">
+                        <div class="position-relative overflow-hidden rounded-top-4">
+                            <img class="product-img" src="p (17).jpeg" alt="Freka Natural Honey 500ml">
+                            <div class="position-absolute top-0 start-0 m-3">
+                                <span class="badge-nfdac"><i class="fas fa-check-circle me-1"></i>Best Seller</span>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h4 class="mb-0">Freka Natural Honey</h4>
+                                <i class="fas fa-trophy text-primary"></i>
+                            </div>
+                            <p class="text-muted small">500ml Glass Jar • Family Size</p>
+                            <p class="mb-3">Our signature product! Rich in antioxidants, supports diabetes management, asthma relief, digestive health, and overall wellness.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="price-tag">₦8,500</span>
+                                <a href="https://wa.me/2348069011339?text=Hello%20Freka%20Farms,%20I%20want%20to%20order%20the%20500ml%20Natural%20Honey" class="btn btn-primary rounded-pill px-4" target="_blank">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 - Freka Natural Honey (1 Litre) -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp product-item" data-category="honey" data-wow-delay="0.3s">
+                    <div class="product-card bg-white rounded-4 shadow-sm h-100">
+                        <div class="position-relative overflow-hidden rounded-top-4">
+                            <img class="product-img" src="b4.jpg" alt="Freka Natural Honey 1 Litre">
+                            <div class="position-absolute top-0 start-0 m-3">
+                                <span class="badge-nfdac"><i class="fas fa-gem me-1"></i>Premium</span>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h4 class="mb-0">Freka Natural Honey</h4>
+                                <i class="fas fa-star text-primary"></i>
+                            </div>
+                            <p class="text-muted small">1 Litre • Economy Size</p>
+                            <p class="mb-3">Best value for regular users. Perfect for families, daily wellness routines, and natural healing. 100% pure, no additives.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="price-tag">₦15,000</span>
+                                <a href="https://wa.me/2348069011339?text=Hello%20Freka%20Farms,%20I%20want%20to%20order%20the%201%20Litre%20Natural%20Honey" class="btn btn-primary rounded-pill px-4" target="_blank">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 - Arabian Tea Classic -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp product-item" data-category="tea" data-wow-delay="0.4s">
+                    <div class="product-card bg-white rounded-4 shadow-sm h-100">
+                        <div class="position-relative overflow-hidden rounded-top-4">
+                            <img class="product-img" src="p (7).jpeg" alt="Arabian Tea Classic">
+                            <div class="position-absolute top-0 start-0 m-3">
+                                <span class="badge-nfdac"><i class="fas fa-heart me-1"></i>Herbal Blend</span>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h4 class="mb-0">Arabian Tea Classic</h4>
+                                <i class="fas fa-mug-hot text-primary"></i>
+                            </div>
+                            <p class="text-muted small">50g • Rich Antioxidant Blend</p>
+                            <p class="mb-3">Supports heart health, brain function, digestion, weight management, and sexual wellness. Aromatic and powerful.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="price-tag">₦6,000</span>
+                                <a href="https://wa.me/2348069011339?text=Hello%20Freka%20Farms,%20I%20want%20to%20order%20the%20Arabian%20Tea%20Classic" class="btn btn-primary rounded-pill px-4" target="_blank">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 - Arabian Tea Premium -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp product-item" data-category="tea" data-wow-delay="0.5s">
+                    <div class="product-card bg-white rounded-4 shadow-sm h-100">
+                        <div class="position-relative overflow-hidden rounded-top-4">
+                            <img class="product-img" src="p (2).jpeg" alt="Arabian Tea Premium">
+                            <div class="position-absolute top-0 start-0 m-3">
+                                <span class="badge-nfdac"><i class="fas fa-crown me-1"></i>Premium</span>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h4 class="mb-0">Arabian Tea Premium</h4>
+                                <i class="fas fa-gem text-primary"></i>
+                            </div>
+                            <p class="text-muted small">100g • Enhanced Formula</p>
+                            <p class="mb-3">Extra strength antioxidant blend. Supports sexual development, energy boost, mental clarity, and overall vitality.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="price-tag">₦10,000</span>
+                                <a href="https://wa.me/2348069011339?text=Hello%20Freka%20Farms,%20I%20want%20to%20order%20the%20Arabian%20Tea%20Premium" class="btn btn-primary rounded-pill px-4" target="_blank">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 - Wellness Combo (Honey 500ml + Tea Classic) -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp product-item" data-category="combo" data-wow-delay="0.6s">
+                    <div class="product-card bg-white rounded-4 shadow-sm h-100">
+                        <div class="position-relative overflow-hidden rounded-top-4">
+                            <img class="product-img" src="b2.jpg" alt="Wellness Combo Pack">
+                            <div class="position-absolute top-0 start-0 m-3">
+                                <span class="badge-nfdac"><i class="fas fa-gift me-1"></i>Save 15%</span>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h4 class="mb-0">Wellness Combo</h4>
+                                <i class="fas fa-hand-holding-heart text-primary"></i>
+                            </div>
+                            <p class="text-muted small">500ml Honey + 50g Arabian Tea</p>
+                            <p class="mb-3">The ultimate health package. Honey for immunity, healing, skin + Tea for antioxidants, digestion, vitality.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="price-tag">₦12,500</span>
+                                <a href="https://wa.me/2348069011339?text=Hello%20Freka%20Farms,%20I%20want%20to%20order%20the%20Wellness%20Combo%20Pack" class="btn btn-primary rounded-pill px-4" target="_blank">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 7 - Family Combo (1L Honey + Tea Premium) -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp product-item" data-category="combo" data-wow-delay="0.7s">
+                    <div class="product-card bg-white rounded-4 shadow-sm h-100">
+                        <div class="position-relative overflow-hidden rounded-top-4">
+                            <img class="product-img" src="b1.jpg" alt="Family Combo">
+                            <div class="position-absolute top-0 start-0 m-3">
+                                <span class="badge-nfdac"><i class="fas fa-users me-1"></i>Family Pack</span>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h4 class="mb-0">Family Wellness Combo</h4>
+                                <i class="fas fa-home text-primary"></i>
+                            </div>
+                            <p class="text-muted small">1L Honey + 100g Premium Tea</p>
+                            <p class="mb-3">Best value for families. Complete natural healthcare solution for all ages. Saves ₦3,500!</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="price-tag">₦22,000</span>
+                                <a href="https://wa.me/2348069011339?text=Hello%20Freka%20Farms,%20I%20want%20to%20order%20the%20Family%20Combo" class="btn btn-primary rounded-pill px-4" target="_blank">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 8 - Pure Honey Comb -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp product-item" data-category="honey" data-wow-delay="0.8s">
+                    <div class="product-card bg-white rounded-4 shadow-sm h-100">
+                        <div class="position-relative overflow-hidden rounded-top-4">
+                            <img class="product-img" src="f5.jpg" alt="Raw Honey Comb">
+                            <div class="position-absolute top-0 start-0 m-3">
+                                <span class="badge-nfdac"><i class="fas fa-bee me-1"></i>Raw Comb</span>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h4 class="mb-0">Raw Honey Comb</h4>
+                                <i class="fas fa-heartbeat text-primary"></i>
+                            </div>
+                            <p class="text-muted small">200g • Chewable Wax</p>
+                            <p class="mb-3">Straight from the hive! Chew the wax for maximum benefits — great for oral health, allergies, and pure energy.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="price-tag">₦7,000</span>
+                                <a href="https://wa.me/2348069011339?text=Hello%20Freka%20Farms,%20I%20want%20to%20order%20the%20Raw%20Honey%20Comb" class="btn btn-primary rounded-pill px-4" target="_blank">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Why Buy From Us Banner -->
+    <div class="container-xxl py-5 my-5" style="background: linear-gradient(135deg, #fff8ed 0%, #fff0dc 100%);">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
+                    <h2 class="mb-4">Why Buy From Freka Farms?</h2>
+                    <div class="d-flex mb-3">
+                        <i class="fas fa-check-circle text-primary fa-2x me-3"></i>
+                        <div><h5>100% Authentic & NAFDAC Approved</h5><p class="text-muted">Certified pure honey — no sugar syrups, no adulteration.</p></div>
+                    </div>
+                    <div class="d-flex mb-3">
+                        <i class="fas fa-truck-fast text-primary fa-2x me-3"></i>
+                        <div><h5>Fast Delivery Across Lagos & Nigeria</h5><p class="text-muted">Same-day delivery in Lagos. Nationwide shipping available.</p></div>
+                    </div>
+                    <div class="d-flex mb-3">
+                        <i class="fas fa-flask text-primary fa-2x me-3"></i>
+                        <div><h5>Lab Tested & Quality Guaranteed</h5><p class="text-muted">Every batch tested for purity, moisture, and活性 enzymes.</p></div>
+                    </div>
+                    <div class="d-flex">
+                        <i class="fas fa-heart text-primary fa-2x me-3"></i>
+                        <div><h5>Thousands of Healed Customers</h5><p class="text-muted">Real testimonials for diabetes, asthma, ulcers, and skin health.</p></div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.3s">
+                    <div class="bg-white p-4 rounded-4 shadow-lg text-center">
+                        <i class="fas fa-quote-right fa-3x text-primary opacity-50 mb-3"></i>
+                        <p class="fs-5 fst-italic">"Freka honey is not just a normal honey — it’s different and it helps a lot of people get healed. Your health is more important than the money we are looking for."</p>
+                        <h6 class="mt-3">— Freka Farms Team</h6>
+                        <div class="mt-3">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <span class="ms-2">500+ 5-star reviews</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="container-xxl py-5 mb-5">
+        <div class="container">
+            <div class="bg-primary rounded-4 p-5 text-center text-white wow fadeInUp" data-wow-delay="0.1s" style="background: linear-gradient(135deg, #f5a623, #c47a2e);">
+                <h1 class="text-white mb-3">Bulk Orders & Corporate Supply</h1>
+                <p class="mb-4 fs-5">Need honey for your hotel, restaurant, or store? We offer wholesale prices and regular supply contracts.</p>
+                <a href="contact.html" class="btn btn-light rounded-pill py-3 px-5 text-primary fw-bold">Contact Sales Team</a>
+                <p class="mt-4 mb-0 small"><i class="fas fa-phone-alt me-2"></i> Call us: +234 806 901 1339 | +234 813 137 1492</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-white mb-4">Freka Farms Enterprises</h5>
+                    <p class="text-white-50">One-stop food supply chain & logistics solutions — farming, processing, distribution. NAFDAC approved honey specialists with 12+ years of heritage.</p>
+                    <div class="d-flex pt-3">
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-white mb-4">Quick Links</h5>
+                    <a class="btn btn-link" href="index.html">Home</a>
+                    <a class="btn btn-link" href="about.html">About Us</a>
+                    <a class="btn btn-link" href="products.html">Products</a>
+                    <a class="btn btn-link" href="contact.html">Contact</a>
+                    <a class="btn btn-link" href="benefits.html">Wellness Benefits</a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-white mb-4">Get in Touch</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3 text-white-50"></i>2/8 Calcutta Crescent, Apapa, Lagos</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3 text-white-50"></i>+234 806 901 1339 , +234 813 137 1492</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3 text-white-50"></i>frekafarms@gmail.com</p>
+                    <p class="mb-0"><i class="fa fa-store me-3 text-white-50"></i>Jakande Estate, Isolo, Lagos</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Copyright -->
+    <div class="container-fluid bg-secondary text-body copyright py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="fw-semi-bold text-dark" href="#">Freka Farms Enterprises</a>, All Right Reserved. | Pure Honey & Arabian Tea
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    Designed with ❤️ for wellness | <i class="fas fa-heart text-danger"></i> Your health is our priority
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/parallax/parallax.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script>
+        window.addEventListener('load', function() {
+            const spinner = document.getElementById('spinner');
+            if (spinner) spinner.style.display = 'none';
+        });
+
+        // Product filtering functionality
+        const filters = document.querySelectorAll('.category-filter');
+        const products = document.querySelectorAll('.product-item');
+        
+        filters.forEach(filter => {
+            filter.addEventListener('click', function() {
+                // Update active class
+                filters.forEach(f => f.classList.remove('active'));
+                this.classList.add('active');
+                
+                const filterValue = this.getAttribute('data-filter');
+                
+                products.forEach(product => {
+                    if (filterValue === 'all' || product.getAttribute('data-category') === filterValue) {
+                        product.style.display = 'block';
+                        setTimeout(() => { product.style.opacity = '1'; }, 10);
+                    } else {
+                        product.style.opacity = '0';
+                        setTimeout(() => { product.style.display = 'none'; }, 200);
+                        product.style.opacity = '1';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
